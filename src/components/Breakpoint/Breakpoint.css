@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'SF Pro Display Semi Bold';
+  src: url('/assets/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+}
+
+.breakpoint-section {
+  position: relative;
+  max-height: 274px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/images/breakpoint.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba(14, 65, 164, 0.6);
+  z-index: 1;
+}
+
+.overlay p {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 32px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 3rem 6rem;
+}

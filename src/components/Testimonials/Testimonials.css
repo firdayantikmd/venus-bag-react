@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'SF Pro Display Semi Bold';
+  src: url('/assets/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('/assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Ultra Light';
+  src: url('/assets/fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+}
+
+.testimonials {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #474747;
+}
+
+.testimonials-container {
+  max-width: 80rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  padding: 1.5rem;
+  border: 1px solid #E9ECF2;
+  border-radius: 16px;
+}
+
+.testimonial .header {
+  margin-bottom: 2rem;
+}
+
+.testimonial .header h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 16px;
+  color: #0E41A4;
+}
+
+.testimonial .header h4 span {
+  color: #2D2D2D;
+}
+
+.testimonial p {
+  font-family: 'SF Pro Display Regular';
+  font-size: 14px;
+  color: #474747;
+  margin-bottom: 1rem;
+}

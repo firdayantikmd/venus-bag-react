@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'SF Pro Display Semi Bold';
+  src: url('/assets/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('/assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Ultra Light';
+  src: url('/assets/fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+}
+
+.products {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.products h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.products p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 4rem;
+  color: #474747;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #FAFCFF;
+  border: 1px solid #538DFF;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: left;
+  width: 300px; /* Ensure each card has a fixed width */
+  max-height: 270px;
+}
+
+.product-card span {
+  font-family: 'SF Pro Display Regular';
+  font-size: 18px;
+  color: #538DFF;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.product-card p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 16px;
+  color: #474747;
+}
+
+.swiper-pagination-bullet {
+  background: #538DFF;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #538DFF;
+}

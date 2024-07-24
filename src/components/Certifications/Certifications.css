@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'SF Pro Display Semi Bold';
+  src: url('/assets/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('/assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Ultra Light';
+  src: url('/assets/fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+}
+
+.certifications {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.certifications p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #474747;
+}
+
+.certification-container {
+  max-width: 90rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  gap: 1.5rem;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #FFF1DB;
+  border-radius: 4px;
+}
+
+.certification .header h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 24px;
+  color: #000000;
+}
+
+.certification .header h4 span {
+  font-family: 'SF Pro Display Regular';
+  font-size: 14px;
+  color: #CC7A00;
+}
+
+.certification p {
+  font-family: 'SF Pro Display Regular';
+  font-size: 15px;
+  color: #474747;
+}

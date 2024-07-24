@@ -1,0 +1,576 @@
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('../fonts/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semi Bold';
+  src: url('../fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Ultra Light';
+  src: url('../fonts/SF-Pro-Text-Ultralight.otf') format('opentype');
+}
+
+/* Ensure the body does not scroll horizontally */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Add this to prevent horizontal overflow from elements */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+  height: 100%;
+}
+
+.container, .hero-container, .about-content, .testimonials-container, .certification-container, .faq-content {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 14px solid #0E41A4;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+  margin-left: 72.5px;
+  padding-left: 32px;
+  box-sizing: border-box;
+}
+
+.hero-top {
+  margin-bottom: 6rem;
+}
+
+.hero-top img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero-top h1 {
+  font-size: 64px;
+  margin: 1rem 0;
+  font-family: 'SF Pro Display Semi Bold';
+}
+
+.hero-top p {
+  font-size: 24px;
+  color: #474747;
+  font-family: 'SF Pro Display Ultra Light';
+}
+
+.hero-bottom {
+  margin-top: 6rem;
+}
+
+.hero-bottom p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 16px;
+  color: #474747;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #004494;
+}
+
+.hero-button a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.hero-image {
+  flex: 1;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 100vh;
+}
+
+.about {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #FFFFFF;
+}
+
+.about h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #474747;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.about-content img {
+  flex: 1 1 40%;
+  max-width: 40%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.content-card {
+  flex: 1 1 10%;
+  background-color: #E6EFFF;
+  padding: 2rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-card span {
+  font-family: 'SF Pro Display Regular';
+  font-size: 18px;
+  color: #538DFF;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-card h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.content-card p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 16PX;
+  color: #474747;
+}
+
+.products {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.products h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.products p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 4rem;
+  color: #474747;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #FAFCFF;
+  border: 1px solid #538DFF;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: left;
+  width: 100%; /* Ensure each card has a fixed width */
+  max-height: 350px;
+  height: 100%;
+}
+
+.product-card span {
+  font-family: 'SF Pro Display Regular';
+  font-size: 18px;
+  color: #538DFF;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.product-card p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 16px;
+  color: #474747;
+}
+
+.swiper-pagination-bullet {
+  background: #538DFF;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0056b3;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #538DFF;
+}
+
+.breakpoint-section {
+  position: relative;
+  max-height: 274px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/images/breakpoint.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba(14, 65, 164, 0.6);
+  z-index: 1;
+}
+
+.overlay p {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 32px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 3rem 6rem;
+}
+
+.testimonials {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #474747;
+}
+
+.testimonials-container {
+  max-width: 80rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  padding: 1.5rem;
+  border: 1px solid #E9ECF2;
+  border-radius: 16px;
+}
+
+.testimonial .header {
+  margin-bottom: 2rem;
+}
+
+.testimonial .header h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 16px;
+  color: #0E41A4;
+}
+
+.testimonial .header h4 span {
+  color: #2D2D2D;
+}
+
+.testimonial p {
+  font-family: 'SF Pro Display Regular';
+  font-size: 14px;
+  color: #474747;
+  margin-bottom: 1rem;
+}
+
+.certifications {
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.certifications p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #474747;
+}
+
+.certification-container {
+  max-width: 90rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  gap: 1.5rem;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #FFF1DB;
+  border-radius: 4px;
+}
+
+.certification .header h4 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 24px;
+  color: #000000;
+}
+
+.certification .header h4 span {
+  font-family: 'SF Pro Display Regular';
+  font-size: 14px;
+  color: #CC7A00;
+}
+
+.certification p {
+  font-family: 'SF Pro Display Regular';
+  font-size: 15px;
+  color: #474747;
+}
+
+.faq {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-bottom: 14px solid #0E41A4;
+}
+
+.faq h2 {
+  font-family: 'SF Pro Display Semi Bold';
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.faq p {
+  font-family: 'SF Pro Display Ultra Light';
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+.faq-content {
+  max-width: 90rem;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  padding: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  gap: 1rem;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #B9CCD0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: background-color 0.3s;
+}
+
+.faq-item.active {
+  background-color: #0E41A4;
+  color: #fff;
+}
+
+.faq-question {
+  font-family: 'SF Pro Display Regular';
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faq-question span {
+  font-size: 20px;
+}
+
+.faq-answer {
+  font-family: 'SF Pro Display Ultra Light';
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #555;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+  color: #D2D2D2;
+}
+
+.faq-item.active .faq-question .icon {
+  content: url("../icons/icon-minus.svg");
+}
+
+.footer {
+  padding: 4rem 2rem;
+  color: #0E41A4;
+  background-color: #FFFFFF;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90rem; /* 1440px */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact p {
+  color: #0E41A4;
+  font-family: 'SF Pro Display Regular';
+  font-size: 18px;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #0E41A4;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 1rem 1rem 0 1rem;
+  color: #0E41A4;
+  font-family: 'SF Pro Display Regular';
+  font-size: 15px;
+  padding: 2rem 2rem 0 2rem;
+}
